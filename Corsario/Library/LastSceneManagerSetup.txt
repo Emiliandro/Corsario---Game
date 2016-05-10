@@ -1,1 +1,4 @@
-sceneSetups: []
+sceneSetups:
+- path: Assets/Scene/PCGWorldTestes.unity
+  isLoaded: 1
+  isActive: 1
