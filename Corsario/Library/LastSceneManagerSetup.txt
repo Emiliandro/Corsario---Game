@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scene/PCGWorldTestes.unity
+- path: Assets/Scene/Vinhetas/ComandoComando.unity
   isLoaded: 1
   isActive: 1

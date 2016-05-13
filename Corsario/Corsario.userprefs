@@ -1,9 +1,11 @@
-﻿<Properties StartupItem="Corsario.CSharp.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\NPCs.cs">
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\Misc\MainMenuS.cs">
     <Files>
-      <File FileName="Assets\Script\NPCs.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\Database.cs" Line="8" Column="2" />
+      <File FileName="Assets\Script\Misc\MainMenuS.cs" Line="21" Column="5" />
+      <File FileName="Assets\Script\Player\Animation2D.cs" Line="19" Column="39" />
+      <File FileName="Assets\Script\Player\Movement2D.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\Player\Sound2D.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
