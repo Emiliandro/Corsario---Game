@@ -2,7 +2,8 @@
 using System.Collections;
 
 public class Movement2D : MonoBehaviour {
-	private KeyCode right = KeyCode.RightArrow;
+    public static Movement2D instance;
+    private KeyCode right = KeyCode.RightArrow;
 	private KeyCode left = KeyCode.LeftArrow;
 	private KeyCode up = KeyCode.UpArrow;
 	private KeyCode down = KeyCode.DownArrow;
@@ -10,44 +11,70 @@ public class Movement2D : MonoBehaviour {
 	[SerializeField] private bool attcking = false;
 	[SerializeField] private float velright;
 	[SerializeField] private float velleft;
-	[SerializeField] private float velup;
+    [SerializeField] private float velup;
 	[SerializeField] private float veldown;
 	[SerializeField] private GameObject player;
 	[SerializeField] private Rigidbody2D player_rb;
 	private int count;
 
-	void Update(){
-		if (Input.GetKey(right)){
-			attcking = false;
-			count = 1;
-			if (Input.GetKey(attck)) {
-				attcking = true;
-			}
-		}
-		else if (Input.GetKey(left))
-		{
-			attcking = false;
-			count = 2;
-			if (Input.GetKey(attck)) {
-				attcking = true;
-			}
-		} else if (Input.GetKey(up))
-		{
-			attcking = false;
-			count = 3;
-			if (Input.GetKey(attck)) {
-				attcking = true;
-			}
-		} else if (Input.GetKey(down))
-		{
-			attcking = false;
-			count = 4;
-			if (Input.GetKey(attck)) {
-				attcking = true;
-			}
-		}
-		else count = 0;
-	}
+    void Start()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        count = 0;
+        StartCoroutine(Correction());
+        StartCoroutine(getRB());
+
+    }
+
+    IEnumerator Correction()
+    {
+        velleft = velleft * -1;
+        veldown = velup * -1;
+        yield return new WaitForSeconds(0);
+        print("valores corrigidos");
+    }
+
+    IEnumerator getRB()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+        player_rb = player.GetComponent<Rigidbody2D>();
+        yield return new WaitForSeconds(3);
+        print("player is connected");
+    }
+
+    void Update(){
+        if (Input.GetKey(right))
+        {
+            attcking = false;
+            count = 1;
+        }
+        else if (Input.GetKey(left))
+        {
+            attcking = false;
+            count = 2;
+        }
+        else if (Input.GetKey(up))
+        {
+            attcking = false;
+            count = 3;
+        }
+        else if (Input.GetKey(down))
+        {
+            attcking = false;
+            count = 4;
+        }
+        else if (Input.GetKey(attck))
+        {
+            attcking = true;
+        }
+        else
+        {
+            count = 0; attcking = false;
+        }
+        }
 	void FixedUpdate(){
 		if (count == 1) {
 			player_rb.velocity = new Vector2(velright, 0f);

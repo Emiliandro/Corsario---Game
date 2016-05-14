@@ -58,12 +58,6 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
@@ -71,10 +65,19 @@
   <ItemGroup>
     <Compile Include="Assets\Script\Board\Generator.cs" />
     <Compile Include="Assets\Script\Board\PerlinNoise.cs" />
+    <Compile Include="Assets\Script\HUD.cs" />
+    <Compile Include="Assets\Script\Itens.cs" />
+    <Compile Include="Assets\Script\Misc\GoToScene.cs" />
+    <Compile Include="Assets\Script\Misc\MainMenuS.cs" />
     <Compile Include="Assets\Script\Misc\ScapeExit.cs" />
+    <Compile Include="Assets\Script\Misc\SkipScene.cs" />
     <Compile Include="Assets\Script\NPCs\NPCs.cs" />
     <Compile Include="Assets\Script\NPCs\NPCsController.cs" />
     <Compile Include="Assets\Script\NPCs\NPCsGerador.cs" />
+    <Compile Include="Assets\Script\Player\Animation2D.cs" />
+    <Compile Include="Assets\Script\Player\FollowCamera2D.cs" />
+    <Compile Include="Assets\Script\Player\Movement2D.cs" />
+    <Compile Include="Assets\Script\Player\Sound2D.cs" />
     <Compile Include="Assets\Script\Vinheta\fade3.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
