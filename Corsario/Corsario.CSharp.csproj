@@ -63,8 +63,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\Board\Generator.cs" />
-    <Compile Include="Assets\Script\Board\PerlinNoise.cs" />
+    <Compile Include="Assets\Board\NoisePCG\Generator.cs" />
+    <Compile Include="Assets\Board\NoisePCG\PerlinNoise.cs" />
+    <Compile Include="Assets\Board\PCGCity\Scripts\BoardManager.cs" />
+    <Compile Include="Assets\Board\PCGCity\Scripts\FloorSettings.cs" />
     <Compile Include="Assets\Script\HUD.cs" />
     <Compile Include="Assets\Script\Itens.cs" />
     <Compile Include="Assets\Script\Misc\GoToScene.cs" />
