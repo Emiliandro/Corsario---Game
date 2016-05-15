@@ -7,7 +7,7 @@ public class Movement2D : MonoBehaviour {
 	private KeyCode left = KeyCode.LeftArrow;
 	private KeyCode up = KeyCode.UpArrow;
 	private KeyCode down = KeyCode.DownArrow;
-	private KeyCode attck = KeyCode.LeftShift;
+	private KeyCode attck = KeyCode.Z;
 	[SerializeField] private bool attcking = false;
 	[SerializeField] private float velright;
 	[SerializeField] private float velleft;
@@ -52,11 +52,15 @@ public class Movement2D : MonoBehaviour {
         {
             attcking = false;
             count = 1;
+            if (Input.GetKey(up)) count = 7;
+            if (Input.GetKey(down)) count = 8;
         }
         else if (Input.GetKey(left) && !attcking)
         {
             attcking = false;
             count = 2;
+            if (Input.GetKey(up)) count = 5;
+            if (Input.GetKey(down)) count = 6;
         }
         else if (Input.GetKey(up) && !attcking)
         {
@@ -78,15 +82,27 @@ public class Movement2D : MonoBehaviour {
         }
         }
 	void FixedUpdate(){
-		if (count == 1) {
-			player_rb.velocity = new Vector2(velright, 0f);
-		} else if (count == 2) {
-			player_rb.velocity = new Vector2(velleft, 0f);
-		} else if (count == 3) {
-			player_rb.velocity = new Vector2(0f, velup);
-		} else if (count == 4) {
-			player_rb.velocity = new Vector2(0f, veldown);
-		} else {
+        if (count == 1) {
+            player_rb.velocity = new Vector2(velright, 0f);
+        } else if (count == 2) {
+            player_rb.velocity = new Vector2(velleft, 0f);
+        } else if (count == 3) {
+            player_rb.velocity = new Vector2(0f, velup);
+        } else if (count == 4) {
+            player_rb.velocity = new Vector2(0f, veldown);
+        } else if (count == 5) {
+            player_rb.velocity = new Vector2(velleft, velup);
+        }
+        else if (count == 6) {
+            player_rb.velocity = new Vector2(velleft, veldown);
+        }
+        else if (count == 7) {
+            player_rb.velocity = new Vector2(velright, velup);
+        }
+        else if (count == 8) {
+            player_rb.velocity = new Vector2(velright, veldown);
+        }
+        else {
 			player_rb.velocity = Vector2.zero;
 		}
 	}

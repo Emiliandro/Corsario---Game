@@ -13,7 +13,7 @@ public class EnemyDano2D : MonoBehaviour
         else dano = 20;
     }
     void FixedUpdate() {
-        if (hp < 0) Destroy(gameObject);
+        if (hp < 0) Destroy(transform.parent.gameObject);
     }
     private void OnTriggerEnter2D(Collider2D other)
     {

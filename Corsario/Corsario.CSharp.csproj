@@ -101,6 +101,7 @@
     <Compile Include="Assets\Script\Player\FollowCamera2D.cs" />
     <Compile Include="Assets\Script\Player\Movement2D.cs" />
     <Compile Include="Assets\Script\Player\Sound2D.cs" />
+    <Compile Include="Assets\Script\Player\TelaDeDano.cs" />
     <Compile Include="Assets\Script\Vinheta\fade3.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />

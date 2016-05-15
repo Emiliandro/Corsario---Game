@@ -12,7 +12,9 @@ public class EnemySpawner2D : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         aleatorio = Random.Range(minimo, maximo);
-        for (int i = 0; i < aleatorio; i++) {
+        for (int i = 0; i < aleatorio; i++)
+        {
+            Debug.Log("Inimigo Instanciando");
             Instantiate(zumbi);
         }
 	}

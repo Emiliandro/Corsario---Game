@@ -20,12 +20,11 @@ public class ArrowForce : MonoBehaviour {
         print("destruido");
         Destroy(gameObject);
     }
-    //private void OnTriggerEnter2D(Collider2D other)
-   // {
-      //  if (other.tag == "Zumbi")
-    //    {
-      //      Destroy(gameObject);
-
-//}
-    //}
+    private void OnTriggerEnter2D(Collider2D other)
+   {
+        if (other.tag == "Zumbi")
+        {
+            Destroy(gameObject);
+        }
+    }
 }

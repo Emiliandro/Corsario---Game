@@ -17,6 +17,10 @@ public class EnemyMovement2D : MonoBehaviour {
             achouPlayer = true;
         }
     }
+
+    void Start() {
+        interpVelocity = Random.Range(0.5f, 2f);
+    }
     void Update() {
         if (achouPlayer) Chase();
     }
