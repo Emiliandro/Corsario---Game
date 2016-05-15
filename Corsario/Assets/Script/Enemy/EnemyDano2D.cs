@@ -21,5 +21,8 @@ public class EnemyDano2D : MonoBehaviour
         {
             hp -= dano;
         }
+        else if (other.tag == "City") {
+            Destroy(transform.parent.gameObject);
+        }
     }
 }
