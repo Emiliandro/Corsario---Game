@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Board/PCGCity/test.unity
+- path: Assets/Scene/Playground/CombateTeste.unity
   isLoaded: 1
   isActive: 1

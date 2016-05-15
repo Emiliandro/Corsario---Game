@@ -15,6 +15,8 @@ public class Movement2D : MonoBehaviour {
 	[SerializeField] private float veldown;
 	[SerializeField] private GameObject player;
 	[SerializeField] private Rigidbody2D player_rb;
+    [SerializeField]
+    private GameObject arrow;
 	private int count;
 
     void Start()
@@ -46,22 +48,22 @@ public class Movement2D : MonoBehaviour {
     }
 
     void Update(){
-        if (Input.GetKey(right))
+        if (Input.GetKey(right) && !attcking)
         {
             attcking = false;
             count = 1;
         }
-        else if (Input.GetKey(left))
+        else if (Input.GetKey(left) && !attcking)
         {
             attcking = false;
             count = 2;
         }
-        else if (Input.GetKey(up))
+        else if (Input.GetKey(up) && !attcking)
         {
             attcking = false;
             count = 3;
         }
-        else if (Input.GetKey(down))
+        else if (Input.GetKey(down) && !attcking)
         {
             attcking = false;
             count = 4;

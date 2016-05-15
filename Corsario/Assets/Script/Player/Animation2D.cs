@@ -8,7 +8,7 @@ public class Animation2D : MonoBehaviour {
 	private KeyCode down = KeyCode.DownArrow;
 	private KeyCode attck = KeyCode.LeftShift;
 	private bool attcking = false;
-	private bool esquerda = false;
+	public bool esquerda = false;
 	private GameObject player;
 	private int count;
 	[SerializeField] private Animator animacoes;
