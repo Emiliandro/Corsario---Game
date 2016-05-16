@@ -3,36 +3,47 @@ using System.Collections;
 
 public class Itens : MonoBehaviour
 {
-    [SerializeField]
-    private bool interagir;
+    [SerializeField] private bool interagir;
+    [SerializeField] public GameObject player;
+    enum TI {
+        Item = 0,
+        NPC = 1
+    };
+    [SerializeField] private TI ti;
+
+    private void start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.tag == "Player") interagir = true;
+        if (other.name == player.name) interagir = true;
     }
 
     private void OnTriggerExit2D(Collider2D exitOther)
     {
-        if (exitOther.tag == "Player") interagir = false;
+        if (exitOther.name == player.name) interagir = false;
     }
 
     public void Update()
     {
+
         if (Input.GetKey(KeyCode.E) && interagir)
         {
-            if (this.name == "Branco")
+            switch (ti)
             {
-                HUD.instance.UseHud("Violão_h");
+                case TI.Item:
+                        HUD.instance.SetHud(this.name);
+                        Destroy(this.gameObject);
+                    break;
+                case TI.NPC:
+                    Movement2D.instance.NPCAdd(this.name);
+                    player.SetActive(false);
+                    break;
+
             }
-            if (this.name == "Branco1")
-            {
-                HUD.instance.UseHud("trans_h");
-            }
-            else
-            {
-                HUD.instance.SetHud(this.name);
-                Destroy(this.gameObject);
-            }
+            
         }
     }
 }

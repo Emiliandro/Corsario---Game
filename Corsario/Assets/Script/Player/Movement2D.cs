@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Fungus;
 
 public class Movement2D : MonoBehaviour {
     public static Movement2D instance;
@@ -15,8 +16,8 @@ public class Movement2D : MonoBehaviour {
 	[SerializeField] private float veldown;
 	[SerializeField] private GameObject player;
 	[SerializeField] private Rigidbody2D player_rb;
-    [SerializeField]
-    private GameObject arrow;
+    [SerializeField] private GameObject arrow;
+    [SerializeField] private Flowchart FC;
 	private int count;
 
     void Start()
@@ -106,4 +107,9 @@ public class Movement2D : MonoBehaviour {
 			player_rb.velocity = Vector2.zero;
 		}
 	}
+    public void NPCAdd(string nome)
+    {
+        FC.SetIntegerVariable(nome, FC.GetIntegerVariable(nome)+1);
+        FC.SendFungusMessage(nome + " Adicionado");
+    }
 }
