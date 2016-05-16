@@ -61,6 +61,24 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>Library\UnityAssemblies\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJson">
+      <HintPath>Assets\Plugins\LitJson.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Board\NoisePCG\Generator.cs" />
@@ -234,9 +252,9 @@
     <Compile Include="Assets\Script\Misc\MainMenuS.cs" />
     <Compile Include="Assets\Script\Misc\ScapeExit.cs" />
     <Compile Include="Assets\Script\Misc\SkipScene.cs" />
+    <Compile Include="Assets\Script\NPCs\EscritorDeNPC.cs" />
+    <Compile Include="Assets\Script\NPCs\LeitorDeNPC.cs" />
     <Compile Include="Assets\Script\NPCs\NPCs.cs" />
-    <Compile Include="Assets\Script\NPCs\NPCsController.cs" />
-    <Compile Include="Assets\Script\NPCs\NPCsGerador.cs" />
     <Compile Include="Assets\Script\Player\Animation2D.cs" />
     <Compile Include="Assets\Script\Player\Combate2D.cs" />
     <Compile Include="Assets\Script\Player\FollowCamera2D.cs" />
@@ -258,10 +276,6 @@
     <None Include="Assets\Fungus\Thirdparty\Reorderable List Field\Editor\Editor.ReorderableList.xml" />
     <None Include="Assets\Fungus\Thirdparty\Reorderable List Field\LICENSE.txt" />
     <None Include="Assets\Fungus\Thirdparty\Reorderable List Field\README.txt" />
-    <None Include="Assets\FungusExamples\Attribution.txt" />
-    <None Include="Assets\FungusExamples\FungusTown\Readme.txt" />
-    <None Include="Assets\FungusExamples\Sherlock\Readme.txt" />
-    <None Include="Assets\FungusExamples\TheFacility\Fonts\aleo\SIL Open Font License.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
