@@ -8,5 +8,6 @@ public class FloorSettings{
     public GameObject floorLimit;
     public GameObject floorLimit2;
     public GameObject background;
-    
+    public Vector3 bgPosition;
+
 }

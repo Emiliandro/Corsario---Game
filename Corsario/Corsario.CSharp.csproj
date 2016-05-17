@@ -58,23 +58,14 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Cecil">
-      <HintPath>Library\UnityAssemblies\Mono.Cecil.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
     <Reference Include="LitJson">
       <HintPath>Assets\Plugins\LitJson.dll</HintPath>
@@ -85,6 +76,8 @@
     <Compile Include="Assets\Board\NoisePCG\PerlinNoise.cs" />
     <Compile Include="Assets\Board\PCGCity\Scripts\BoardManager.cs" />
     <Compile Include="Assets\Board\PCGCity\Scripts\FloorSettings.cs" />
+    <Compile Include="Assets\Board\PCGCity\Scripts\Item.cs" />
+    <Compile Include="Assets\Board\PCGCity\Scripts\ItensPanel.cs" />
     <Compile Include="Assets\Fungus\Animation\Scripts\Commands\ResetAnimTrigger.cs" />
     <Compile Include="Assets\Fungus\Animation\Scripts\Commands\SetAnimBool.cs" />
     <Compile Include="Assets\Fungus\Animation\Scripts\Commands\SetAnimFloat.cs" />
