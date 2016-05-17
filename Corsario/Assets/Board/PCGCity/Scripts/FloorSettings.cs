@@ -9,5 +9,6 @@ public class FloorSettings{
     public GameObject floorLimit2;
     public GameObject background;
     public Vector3 bgPosition;
+    public GameObject enemyPrefab;
 
 }

@@ -10,6 +10,8 @@ public class BoardManager : MonoBehaviour {
     [SerializeField]
     public FloorSettings[] floorSettings;
 
+    private Transform player;
+
     private Transform boardHolder;
     private List<Vector3> gridPosition = new List<Vector3>(); //Lista de Posicoes para os tiles
 
@@ -42,6 +44,22 @@ public class BoardManager : MonoBehaviour {
         }
     }
 
+    void EnemyGenerate(int index, int minE, int maxE) {
+        int enemyCount = Random.Range(minE, maxE);
+        for (int i = 0; i < enemyCount; i++) {
+            int pos = Random.Range(0, gridPosition.Count);
+            if (((gridPosition[pos].y != 0) || (gridPosition[pos].y != rows - 1)) && Mathf.Abs(Vector3.Distance(gridPosition[pos],player.position)) > 4){
+                GameObject Enemy = Instantiate(floorSettings[index].enemyPrefab, gridPosition[pos], Quaternion.identity) as GameObject;
+                Debug.Log("Instanciou o inimigo em: " + gridPosition[pos]);
+            }
+            gridPosition.RemoveAt(pos);
+
+        }
+    }
+
+    void Awake() {
+        player = GameObject.Find("Player").transform;
+    }
 
     // Use this for initialization
     void Start () {
@@ -51,6 +69,7 @@ public class BoardManager : MonoBehaviour {
         Renderer render = bg.GetComponent<Renderer>();
         initialiseList((int)render.bounds.size.x + 1);
         FloorGenerate(floorIndex);
+        EnemyGenerate(floorIndex, 1, 5);
 
     }
 
