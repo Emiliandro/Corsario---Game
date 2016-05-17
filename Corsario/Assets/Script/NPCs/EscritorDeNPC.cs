@@ -22,21 +22,21 @@ public class EscritorDeNPC : MonoBehaviour
         if (qualNPC == 1)
         {
             dataJson = JsonMapper.ToJson(bluePrint);
-            File.WriteAllText(Application.dataPath + "/Procedurais/primeiro.json", dataJson.ToString());
+            File.WriteAllText(Application.dataPath + "/primeiro.json", dataJson.ToString());
         }
         else if (qualNPC == 2)
         {
             dataJson = JsonMapper.ToJson(bluePrint);
-            File.WriteAllText(Application.dataPath + "/Procedurais/segundo.json", dataJson.ToString());
+            File.WriteAllText(Application.dataPath + "/segundo.json", dataJson.ToString());
         }
         else if (qualNPC == 3)
         {
             dataJson = JsonMapper.ToJson(bluePrint);
-            File.WriteAllText(Application.dataPath + "/Procedurais/terceiro.json", dataJson.ToString());
+            File.WriteAllText(Application.dataPath + "/terceiro.json", dataJson.ToString());
         }
         else {
             dataJson = JsonMapper.ToJson(bluePrint);
-            File.WriteAllText(Application.dataPath + "/Procedurais/quarto.json", dataJson.ToString());
+            File.WriteAllText(Application.dataPath + "/quarto.json", dataJson.ToString());
 
         }
 

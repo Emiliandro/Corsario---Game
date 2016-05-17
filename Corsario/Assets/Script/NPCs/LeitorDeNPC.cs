@@ -8,10 +8,9 @@ using UnityEngine.UI;
 public class LeitorDeNPC : MonoBehaviour {
     private string contentChar;
     private JsonData charData;
-    private string nome, sobrenome, origem, item;
+    private string nome, sobrenome, origem, item, profissao, crenca;
     public int qualNPC;
-    public Text hpDisplay;
-
+    int background;
     // Use this for initialization
     void Start () {
         Invoke("readJson", 3f);
@@ -20,42 +19,50 @@ public class LeitorDeNPC : MonoBehaviour {
     void readJson() {
         if (qualNPC == 1)
         {
-            contentChar = File.ReadAllText(Application.dataPath + "/Procedurais/primeiro.json");
+            contentChar = File.ReadAllText(Application.dataPath + "/primeiro.json");
             charData = JsonMapper.ToObject(contentChar);
-            hpDisplay = GameObject.Find("quest1").GetComponent<Text>();
 
         }
         else if (qualNPC == 2)
         {
-            contentChar = File.ReadAllText(Application.dataPath + "/Procedurais/segundo.json");
+            contentChar = File.ReadAllText(Application.dataPath + "/segundo.json");
             charData = JsonMapper.ToObject(contentChar);
-            hpDisplay = GameObject.Find("quest2").GetComponent<Text>();
 
         }
         else if (qualNPC == 3)
         {
-            contentChar = File.ReadAllText(Application.dataPath + "/Procedurais/terceiro.json");
+            contentChar = File.ReadAllText(Application.dataPath + "/terceiro.json");
             charData = JsonMapper.ToObject(contentChar);
-            hpDisplay = GameObject.Find("quest3").GetComponent<Text>();
 
         }
         else {
-            contentChar = File.ReadAllText(Application.dataPath + "/Procedurais/quarto.json");
+            contentChar = File.ReadAllText(Application.dataPath + "/quarto.json");
             charData = JsonMapper.ToObject(contentChar);
-            hpDisplay = GameObject.Find("quest4").GetComponent<Text>();
 
         }
         writeStrings();
     }
     void writeStrings() {
         nome = charData["Nome"].ToString();
+        profissao = charData["Profissao"].ToString();
         sobrenome = charData["Sobrenome"].ToString();
         origem = charData["LugarDeOrigem"].ToString();
         item = charData["Item"].ToString();
+        crenca = charData["Crenca"].ToString();
 
         Debug.Log(nome + " " + sobrenome + ", de " + origem + ", quer um(a) " + item);
-        hpDisplay.text = nome + " " + sobrenome + ", de " + origem + ", quer um(a) " + item;
+        writeBackground();
+    }
+    void writeBackground() {
+        background = Random.Range(0, 2);
+        if (background == 1)
+        {
+            Debug.Log(nome + " " + sobrenome + " vem de uma familia de " + origem + ". com a queda virou um devoto de " + crenca + ", mas secretamente vai a cultos de Jumala.");
+        }
+        else {
+            Debug.Log(nome + " " + sobrenome + " vem de uma familia de fazendeiros de " + origem + ", mas com a queda decidiu ser " + profissao + ".");
 
+        }
     }
 
 }

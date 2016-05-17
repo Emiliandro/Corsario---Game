@@ -1,6 +1,6 @@
-﻿using UnityEngine;
+﻿using Fungus;
 using System.Collections;
-using Fungus;
+using UnityEngine;
 
 public class Movement2D : MonoBehaviour {
     public static Movement2D instance;
@@ -48,27 +48,31 @@ public class Movement2D : MonoBehaviour {
         print("player is connected");
     }
 
-    void Update(){
-        if (Input.GetKey(right) && !attcking)
+    void Update() {
+        if (Input.GetKeyDown(attck)) attcking = true;
+        if (Input.GetKeyUp(attck)) attcking = false;
+
+
+        if (Input.GetKey(right) && attcking == false)
         {
             attcking = false;
             count = 1;
             if (Input.GetKey(up)) count = 7;
             if (Input.GetKey(down)) count = 8;
         }
-        else if (Input.GetKey(left) && !attcking)
+        else if (Input.GetKey(left) && attcking == false)
         {
             attcking = false;
             count = 2;
             if (Input.GetKey(up)) count = 5;
             if (Input.GetKey(down)) count = 6;
         }
-        else if (Input.GetKey(up) && !attcking)
+        else if (Input.GetKey(up) && attcking == false)
         {
             attcking = false;
             count = 3;
         }
-        else if (Input.GetKey(down) && !attcking)
+        else if (Input.GetKey(down) && attcking == false)
         {
             attcking = false;
             count = 4;
@@ -79,10 +83,11 @@ public class Movement2D : MonoBehaviour {
         }
         else
         {
+            player_rb.velocity = new Vector2(0f, 0f);
             count = 0; attcking = false;
         }
-        }
-	void FixedUpdate(){
+    }
+    void FixedUpdate() { 
         if (count == 1) {
             player_rb.velocity = new Vector2(velright, 0f);
         } else if (count == 2) {

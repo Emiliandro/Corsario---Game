@@ -10,7 +10,8 @@ public class Combate2D : MonoBehaviour
     private float nextTime = 0;
     private float pX, pY, pZ;
     public float hp = 100;
-    public Text hpDisplay;
+    public Text hpDisplay, arrowDisplay;
+    private int maxArrow = 3;
 
 
     void FixedUpdate()
@@ -24,26 +25,38 @@ public class Combate2D : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Z))
         {
+            if (Time.time >= nextTime)
+            {
+                pX = GameObject.FindGameObjectWithTag("Player").transform.position.x;
+                pY = GameObject.FindGameObjectWithTag("Player").transform.position.y;
+                pZ = GameObject.FindGameObjectWithTag("Player").transform.position.z;
+                nextTime += interval;
+            }
             Disparo();
         }
         if (hp <= 0) Application.LoadLevel("GameOver");
 
         if (hp > 0) hpDisplay.text = hp + "%";
         else if (hp <= 0) hpDisplay.text = "00%";
+        arrowDisplay.text = maxArrow.ToString() + " Flechas";
+        if (maxArrow < 1) {
+            maxArrow = 1;
+            Invoke("Less", 2f);
+        }
+        if (maxArrow >= 4)
+        {
+            maxArrow = 3;
+        }
     }
 
     void Disparo()
     {
-        if (Time.time >= nextTime)
-        {
-            pX = GameObject.FindGameObjectWithTag("Player").transform.position.x;
-            pY = GameObject.FindGameObjectWithTag("Player").transform.position.y;
-            pZ = GameObject.FindGameObjectWithTag("Player").transform.position.z;
-            if (esquerda) Instantiate(arrowEsquerda, new Vector3(pX, pY, pZ), Quaternion.identity);
-            if (!esquerda) Instantiate(arrowDireita, new Vector3(pX, pY, pZ), Quaternion.identity);
-
-
-            nextTime += interval;
+        maxArrow--;
+        if (maxArrow > 0)
+        { 
+        if (esquerda) Instantiate(arrowEsquerda, new Vector3(pX, pY, pZ), Quaternion.identity);
+        if (!esquerda) Instantiate(arrowDireita, new Vector3(pX, pY, pZ), Quaternion.identity);
+            Invoke("Less", 2f);
         }
     }
     private void OnTriggerEnter2D(Collider2D other)
@@ -61,5 +74,9 @@ public class Combate2D : MonoBehaviour
     }
     void Start() {
         hpDisplay = GameObject.Find("hpbar").GetComponent<Text>();
+        arrowDisplay = GameObject.Find("flechas").GetComponent<Text>();
+    }
+    void Less() {
+        maxArrow++;
     }
 }
