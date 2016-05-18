@@ -52,7 +52,6 @@ public class Movement2D : MonoBehaviour {
         if (Input.GetKeyDown(attck)) attcking = true;
         if (Input.GetKeyUp(attck)) attcking = false;
 
-
         if (Input.GetKey(right) && attcking == false)
         {
             attcking = false;
@@ -77,14 +76,15 @@ public class Movement2D : MonoBehaviour {
             attcking = false;
             count = 4;
         }
-        else if (Input.GetKey(attck))
-        {
-            attcking = true;
-        }
         else
         {
             player_rb.velocity = new Vector2(0f, 0f);
             count = 0; attcking = false;
+        }
+
+        if (Input.GetKey(attck))
+        {
+            attcking = true;
         }
     }
     void FixedUpdate() { 

@@ -2,23 +2,19 @@
 using System.Collections;
 
 public class FollowCamera2D : MonoBehaviour {
-	public float interpVelocity, minDistance, followDistance, distanceR, distanceL, floatHeight, liftForce, damping;
+	public float interpVelocity, minDistance, followDistance;
 	public GameObject target;
     public Vector3 offset;
     Vector3 targetPos;
 
 	// Use this for initialization
 	void Start () {
+        target = GameObject.FindGameObjectWithTag("Player");
 		targetPos = transform.position;
 	}
 
 	// Update is called once per frame
 	void FixedUpdate () {
-        RaycastHit2D hit = Physics2D.Raycast(target.transform.position, Vector2.right);
-        if (hit.collider != null)
-        {
-            distanceR = hit.point.x;
-        }
         if (target){
 			Vector3 posNoZ = transform.position;
 			posNoZ.z = target.transform.position.z;
