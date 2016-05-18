@@ -1,0 +1,138 @@
+fileFormatVersion: 2
+guid: fc9cc0f798fd727478e69eb04405bbb9
+timeCreated: 1463611390
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: spritesheet blacksmith_0
+    21300002: spritesheet blacksmith_1
+    21300004: spritesheet blacksmith_2
+    21300006: spritesheet blacksmith_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: spritesheet blacksmith_0
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 44
+        width: 142
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5.5784607, y: 92.67846}
+        - {x: -48.42154, y: 92.67846}
+        - {x: -61.42154, y: 51.67846}
+        - {x: -61.42154, y: -92.32154}
+        - {x: 52.57846, y: -92.32154}
+        - {x: 62.57846, y: -86.32154}
+        - {x: 62.57846, y: 45.67846}
+    - name: spritesheet blacksmith_1
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 44
+        width: 147
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 61.20923, y: 8.178459}
+        - {x: 12.2092285, y: 88.17846}
+        - {x: -40.79077, y: 88.17846}
+        - {x: -63.79077, y: 61.17846}
+        - {x: -63.79077, y: -87.82154}
+        - {x: 15.2092285, y: -87.82154}
+        - {x: 64.20923, y: -44.82154}
+        - {x: 64.20923, y: 6.178459}
+    - name: spritesheet blacksmith_2
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 44
+        width: 142
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 62.516907, y: -81.82154}
+        - {x: 62.516907, y: 57.17846}
+        - {x: 46.516907, y: 88.17846}
+        - {x: -33.483093, y: 88.17846}
+        - {x: -61.483093, y: 56.17846}
+        - {x: -61.483093, y: -87.82154}
+        - {x: -33.483093, y: -87.82154}
+        - {x: -30.483093, y: -83.82154}
+        - {x: -24.483093, y: -87.82154}
+        - {x: 22.516907, y: -87.82154}
+    - name: spritesheet blacksmith_3
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 44
+        width: 147
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 61.147705, y: 8.178459}
+        - {x: 12.147705, y: 88.17846}
+        - {x: -40.852295, y: 88.17846}
+        - {x: -63.852295, y: 61.17846}
+        - {x: -63.852295, y: -87.82154}
+        - {x: 15.147705, y: -87.82154}
+        - {x: 64.147705, y: -44.82154}
+        - {x: 64.147705, y: 6.178459}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

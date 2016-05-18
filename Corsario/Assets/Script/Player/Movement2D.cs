@@ -18,7 +18,10 @@ public class Movement2D : MonoBehaviour {
 	[SerializeField] private Rigidbody2D player_rb;
     [SerializeField] private GameObject arrow;
     [SerializeField] private Flowchart FC;
-	private int count;
+    [SerializeField] private Animator animacoes;
+    [SerializeField] private string[] listaAnimacoes;
+    private int count;
+    private bool esquerda = false;
 
     void Start()
     {
@@ -51,9 +54,21 @@ public class Movement2D : MonoBehaviour {
     void Update() {
         if (Input.GetKeyDown(attck)) attcking = true;
         if (Input.GetKeyUp(attck)) attcking = false;
-
+        if (Input.GetKey(attck))
+        {
+            attcking = true;
+            if (attcking)
+            { 
+            if (!esquerda) animacoes.Play(listaAnimacoes[4], 0, 1f);
+            if (esquerda) animacoes.Play(listaAnimacoes[5], 0, 1f);
+            }
+            if (Input.GetKeyUp(attck)) attcking = false;
+        }
         if (Input.GetKey(right) && attcking == false)
         {
+            if (Input.GetKeyDown(right)) { 
+            animacoes.Play(listaAnimacoes[1], 0, 1f);
+            }
             attcking = false;
             count = 1;
             if (Input.GetKey(up)) count = 7;
@@ -61,6 +76,9 @@ public class Movement2D : MonoBehaviour {
         }
         else if (Input.GetKey(left) && attcking == false)
         {
+            if (Input.GetKeyDown(left)) { 
+            animacoes.Play(listaAnimacoes[2], 0, 1f);
+            }
             attcking = false;
             count = 2;
             if (Input.GetKey(up)) count = 5;
@@ -68,50 +86,78 @@ public class Movement2D : MonoBehaviour {
         }
         else if (Input.GetKey(up) && attcking == false)
         {
+            if (Input.GetKeyDown(up))
+            {
+                if (esquerda == true) animacoes.Play(listaAnimacoes[2], 0, 1f);
+                else animacoes.Play(listaAnimacoes[1], 0, 1f);
+            }
             attcking = false;
             count = 3;
         }
         else if (Input.GetKey(down) && attcking == false)
         {
+            if (Input.GetKeyDown(down))
+            {
+                if (esquerda == true) animacoes.Play(listaAnimacoes[2], 0, 1f);
+                else animacoes.Play(listaAnimacoes[1], 0, 1f);
+            }
             attcking = false;
             count = 4;
         }
         else
         {
+            if (!Input.GetKeyDown(up)) { 
+            if (esquerda == true) animacoes.Play(listaAnimacoes[3], 0, 1f);
+            else animacoes.Play(listaAnimacoes[0], 0, 1f);
+            }
             player_rb.velocity = new Vector2(0f, 0f);
             count = 0; attcking = false;
         }
 
-        if (Input.GetKey(attck))
-        {
-            attcking = true;
-        }
+       
     }
     void FixedUpdate() { 
         if (count == 1) {
             player_rb.velocity = new Vector2(velright, 0f);
-        } else if (count == 2) {
+            esquerda = false;
+        }
+        else if (count == 2) {
             player_rb.velocity = new Vector2(velleft, 0f);
-        } else if (count == 3) {
+            esquerda = true;
+
+        }
+        else if (count == 3) {
             player_rb.velocity = new Vector2(0f, velup);
-        } else if (count == 4) {
+
+        }
+        else if (count == 4) {
             player_rb.velocity = new Vector2(0f, veldown);
-        } else if (count == 5) {
+        }
+        else if (count == 5) {
             player_rb.velocity = new Vector2(velleft, velup);
+            esquerda = true;
+
         }
         else if (count == 6) {
             player_rb.velocity = new Vector2(velleft, veldown);
+            esquerda = true;
+
         }
         else if (count == 7) {
             player_rb.velocity = new Vector2(velright, velup);
+            esquerda = false;
+
         }
         else if (count == 8) {
             player_rb.velocity = new Vector2(velright, veldown);
+            esquerda = false;
+
         }
         else {
 			player_rb.velocity = Vector2.zero;
-		}
-	}
+           
+        }
+    }
     public void NPCAdd(string nome)
     {
         FC.SetIntegerVariable(nome, FC.GetIntegerVariable(nome)+1);

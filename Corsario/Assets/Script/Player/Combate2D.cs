@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class Combate2D : MonoBehaviour
 {
     public GameObject arrowDireita, arrowEsquerda, dano;
-    public bool  esquerda;
+    public bool  esquerda = false;
     private int interval = 1;
     private float nextTime = 0;
     private float pX, pY, pZ;
@@ -13,16 +13,19 @@ public class Combate2D : MonoBehaviour
     public Text hpDisplay, arrowDisplay;
     private int maxArrow = 3;
 
-
-    void FixedUpdate()
-    {
+    void Update() {
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             esquerda = false;
         }
-        else if (Input.GetKeyDown(KeyCode.LeftArrow)) {
+        else if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
             esquerda = true;
         }
+    }
+    void FixedUpdate()
+    {
+        
         if (Input.GetKeyDown(KeyCode.Z))
         {
             if (Time.time >= nextTime)
@@ -51,11 +54,12 @@ public class Combate2D : MonoBehaviour
 
     void Disparo()
     {
-        maxArrow--;
         if (maxArrow > 0)
         { 
         if (esquerda) Instantiate(arrowEsquerda, new Vector3(pX, pY, pZ), Quaternion.identity);
         if (!esquerda) Instantiate(arrowDireita, new Vector3(pX, pY, pZ), Quaternion.identity);
+            maxArrow--;
+
             Invoke("Less", 2f);
         }
     }

@@ -1,0 +1,137 @@
+fileFormatVersion: 2
+guid: 4aa23326fb154ad40836fb0b7484df25
+timeCreated: 1463611503
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: spritesheet knight_0
+    21300002: spritesheet knight_1
+    21300004: spritesheet knight_2
+    21300006: spritesheet knight_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: spritesheet knight_0
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 24
+        width: 142
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.606346, y: 99.50476}
+        - {x: -57.606346, y: 69.50476}
+        - {x: -57.606346, y: -82.49524}
+        - {x: -44.606346, y: -96.49524}
+        - {x: -23.606346, y: -98.49524}
+        - {x: 56.393654, y: -98.49524}
+        - {x: 58.393654, y: -95.49524}
+        - {x: 58.393654, y: -2.4952393}
+        - {x: 32.393654, y: 99.50476}
+    - name: spritesheet knight_1
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 24
+        width: 137
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44.542847, y: 97.50476}
+        - {x: -55.542847, y: 62.50476}
+        - {x: -55.542847, y: -96.49524}
+        - {x: 56.457153, y: -96.49524}
+        - {x: 56.457153, y: 60.50476}
+        - {x: 19.457153, y: 97.50476}
+    - name: spritesheet knight_2
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 29
+        width: 137
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16.457153, y: 90.56825}
+        - {x: 14.457153, y: 93.56825}
+        - {x: -16.542847, y: 93.56825}
+        - {x: -21.542847, y: 92.56825}
+        - {x: -55.542847, y: 50.568253}
+        - {x: -55.542847, y: -78.43175}
+        - {x: -52.542847, y: -92.43175}
+        - {x: 55.457153, y: -92.43175}
+        - {x: 56.457153, y: -90.43175}
+        - {x: 56.457153, y: -24.431747}
+        - {x: 40.457153, y: 45.568253}
+    - name: spritesheet knight_3
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 24
+        width: 137
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44.542847, y: 97.50476}
+        - {x: -55.542847, y: 62.50476}
+        - {x: -55.542847, y: -96.49524}
+        - {x: 56.457153, y: -96.49524}
+        - {x: 56.457153, y: 60.50476}
+        - {x: 19.457153, y: 97.50476}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

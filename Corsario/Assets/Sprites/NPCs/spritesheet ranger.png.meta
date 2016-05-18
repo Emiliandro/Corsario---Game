@@ -1,0 +1,154 @@
+fileFormatVersion: 2
+guid: d3e2b6b2871d5ed49bcb1428e2891fad
+timeCreated: 1463611591
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: spritesheet ranger_0
+    21300002: spritesheet ranger_1
+    21300004: spritesheet ranger_2
+    21300006: spritesheet ranger_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: spritesheet ranger_0
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 23
+        width: 148
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 56.22963, y: -68.707405}
+        - {x: 56.22963, y: 9.292595}
+        - {x: 39.22963, y: 75.292595}
+        - {x: 6.2296295, y: 75.292595}
+        - {x: -28.77037, y: 60.292595}
+        - {x: -28.77037, y: 53.292595}
+        - {x: -33.77037, y: 74.292595}
+        - {x: -33.77037, y: 75.292595}
+        - {x: -47.77037, y: 75.292595}
+        - {x: -55.77037, y: 54.292595}
+        - {x: -55.77037, y: -54.707405}
+        - {x: -52.77037, y: -73.707405}
+        - {x: -46.77037, y: -74.707405}
+        - {x: 49.22963, y: -74.707405}
+    - name: spritesheet ranger_1
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 23
+        width: 137
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.140747, y: 53.292595}
+        - {x: -28.140747, y: 74.292595}
+        - {x: -28.140747, y: 75.292595}
+        - {x: -42.140747, y: 75.292595}
+        - {x: -51.140747, y: 47.292595}
+        - {x: -51.140747, y: -74.707405}
+        - {x: 52.859253, y: -74.707405}
+        - {x: 52.859253, y: 29.292595}
+        - {x: 46.859253, y: 75.292595}
+        - {x: 11.859253, y: 75.292595}
+        - {x: -23.140747, y: 60.292595}
+    - name: spritesheet ranger_2
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 23
+        width: 137
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.488892, y: 75.292595}
+        - {x: -23.511108, y: 60.292595}
+        - {x: -23.511108, y: 53.292595}
+        - {x: -28.511108, y: 74.292595}
+        - {x: -28.511108, y: 75.292595}
+        - {x: -42.51111, y: 75.292595}
+        - {x: -51.51111, y: 40.292595}
+        - {x: -51.51111, y: -47.707405}
+        - {x: -46.51111, y: -73.707405}
+        - {x: -42.51111, y: -74.707405}
+        - {x: 52.48889, y: -74.707405}
+        - {x: 52.48889, y: 18.292595}
+        - {x: 48.48889, y: 75.292595}
+    - name: spritesheet ranger_3
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 23
+        width: 137
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.88147, y: 53.292595}
+        - {x: -28.88147, y: 74.292595}
+        - {x: -28.88147, y: 75.292595}
+        - {x: -42.88147, y: 75.292595}
+        - {x: -51.88147, y: 47.292595}
+        - {x: -51.88147, y: -74.707405}
+        - {x: 52.11853, y: -74.707405}
+        - {x: 52.11853, y: 29.292595}
+        - {x: 46.11853, y: 75.292595}
+        - {x: 11.11853, y: 75.292595}
+        - {x: -23.88147, y: 60.292595}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

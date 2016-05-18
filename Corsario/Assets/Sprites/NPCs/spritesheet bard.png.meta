@@ -1,0 +1,150 @@
+fileFormatVersion: 2
+guid: 51a7b50879b2b064aa1535236d273963
+timeCreated: 1463611366
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: spritesheet bard_0
+    21300002: spritesheet bard_1
+    21300004: spritesheet bard_2
+    21300006: spritesheet bard_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: spritesheet bard_0
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 33
+        width: 132
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15.662964, y: 71.17778}
+        - {x: 9.662964, y: 72.17778}
+        - {x: -28.337036, y: 72.17778}
+        - {x: -30.337036, y: 69.17778}
+        - {x: -50.337036, y: -5.82222}
+        - {x: -50.337036, y: -71.82222}
+        - {x: 42.662964, y: -71.82222}
+        - {x: 50.662964, y: -53.82222}
+        - {x: 50.662964, y: 12.17778}
+        - {x: 44.662964, y: 13.17778}
+    - name: spritesheet bard_1
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 33
+        width: 122
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28.440735, y: -62.32222}
+        - {x: 25.440735, y: -29.32222}
+        - {x: 48.440735, y: -17.32222}
+        - {x: 48.440735, y: 14.67778}
+        - {x: 8.440735, y: 66.67778}
+        - {x: -37.559265, y: 66.67778}
+        - {x: -46.559265, y: -36.32222}
+        - {x: -46.559265, y: -66.32222}
+        - {x: -27.559265, y: -66.32222}
+        - {x: -13.559265, y: -43.32222}
+        - {x: 4.440735, y: -66.32222}
+        - {x: 25.440735, y: -66.32222}
+    - name: spritesheet bard_2
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 33
+        width: 116
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 45.533325, y: -61.32222}
+        - {x: 45.533325, y: 10.67778}
+        - {x: 9.533325, y: 66.67778}
+        - {x: 1.5333252, y: 68.67778}
+        - {x: -29.466675, y: 68.67778}
+        - {x: -38.466675, y: 33.67778}
+        - {x: -44.466675, y: -37.32222}
+        - {x: -44.466675, y: -68.32222}
+        - {x: -25.466675, y: -68.32222}
+        - {x: -11.466675, y: -45.32222}
+        - {x: 6.533325, y: -68.32222}
+        - {x: 41.533325, y: -68.32222}
+    - name: spritesheet bard_3
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 33
+        width: 122
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29.125916, y: -66.82222}
+        - {x: 47.125916, y: -49.82222}
+        - {x: 47.125916, y: 37.17778}
+        - {x: 32.125916, y: 70.17778}
+        - {x: -32.874084, y: 70.17778}
+        - {x: -46.874084, y: -6.82222}
+        - {x: -46.874084, y: -69.82222}
+        - {x: -28.874084, y: -69.82222}
+        - {x: -21.874084, y: -61.82222}
+        - {x: -0.8740845, y: -69.82222}
+        - {x: 24.125916, y: -69.82222}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,150 @@
+fileFormatVersion: 2
+guid: 86bdcbf140497d64c8985eaa552a001c
+timeCreated: 1463611775
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: spritesheet sorcerer_0
+    21300002: spritesheet sorcerer_1
+    21300004: spritesheet sorcerer_2
+    21300006: spritesheet sorcerer_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: spritesheet sorcerer_0
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 35
+        width: 158
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -36.34516, y: 82.40323}
+        - {x: -65.34516, y: 61.40323}
+        - {x: -65.34516, y: -30.596771}
+        - {x: -38.34516, y: -80.59677}
+        - {x: 65.65484, y: -80.59677}
+        - {x: 65.65484, y: 47.40323}
+        - {x: 45.65484, y: 82.40323}
+      - - {x: -53.34516, y: 63.40323}
+        - {x: -53.34516, y: 33.40323}
+        - {x: -42.34516, y: 33.40323}
+        - {x: -40.34516, y: 35.40323}
+        - {x: -40.34516, y: 57.40323}
+        - {x: -43.34516, y: 63.40323}
+    - name: spritesheet sorcerer_1
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 35
+        width: 158
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -39.345154, y: 82.40323}
+        - {x: -52.345154, y: 74.40323}
+        - {x: -65.34515, y: 47.40323}
+        - {x: -65.34515, y: -76.59677}
+        - {x: -58.345154, y: -80.59677}
+        - {x: 65.65485, y: -80.59677}
+        - {x: 65.65485, y: 5.4032288}
+        - {x: 37.654846, y: 82.40323}
+    - name: spritesheet sorcerer_2
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 35
+        width: 152
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.89032, y: 58.40323}
+        - {x: -42.89032, y: 73.40323}
+        - {x: -55.89032, y: 74.40323}
+        - {x: -62.89032, y: 57.40323}
+        - {x: -62.89032, y: -31.596771}
+        - {x: -45.89032, y: -80.59677}
+        - {x: 63.10968, y: -80.59677}
+        - {x: 63.10968, y: 17.403229}
+        - {x: 62.10968, y: 30.403229}
+        - {x: 25.10968, y: 82.40323}
+        - {x: -24.89032, y: 82.40323}
+        - {x: -31.89032, y: 79.40323}
+    - name: spritesheet sorcerer_3
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 35
+        width: 152
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.89032, y: 58.40323}
+        - {x: -42.89032, y: 73.40323}
+        - {x: -55.89032, y: 74.40323}
+        - {x: -62.89032, y: 57.40323}
+        - {x: -62.89032, y: -31.596771}
+        - {x: -45.89032, y: -80.59677}
+        - {x: 63.10968, y: -80.59677}
+        - {x: 63.10968, y: 17.403229}
+        - {x: 62.10968, y: 30.403229}
+        - {x: 25.10968, y: 82.40323}
+        - {x: -24.89032, y: 82.40323}
+        - {x: -31.89032, y: 79.40323}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

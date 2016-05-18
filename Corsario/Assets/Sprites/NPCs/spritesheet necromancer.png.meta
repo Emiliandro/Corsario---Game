@@ -1,0 +1,192 @@
+fileFormatVersion: 2
+guid: 59abf569944ac1b46b2d0ea48161e008
+timeCreated: 1463611550
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: spritesheet necromancer_0
+    21300002: spritesheet necromancer_1
+    21300004: spritesheet necromancer_2
+    21300006: spritesheet necromancer_3
+    21300008: spritesheet necromancer_4
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: spritesheet necromancer_0
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 34
+        width: 178
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25.188889, y: -24.988892}
+        - {x: 31.188889, y: -24.988892}
+        - {x: 34.18889, y: -54.98889}
+        - {x: 49.18889, y: -54.98889}
+        - {x: 49.18889, y: 55.01111}
+        - {x: 45.18889, y: 56.01111}
+        - {x: -48.81111, y: 56.01111}
+        - {x: -48.81111, y: -6.9888916}
+        - {x: -26.811111, y: -49.98889}
+        - {x: -15.811111, y: -54.98889}
+        - {x: 30.188889, y: -54.98889}
+        - {x: 31.188889, y: -53.98889}
+        - {x: 31.188889, y: -41.98889}
+        - {x: 26.188889, y: -31.988892}
+    - name: spritesheet necromancer_1
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 34
+        width: 177
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38.899994, y: -41.98889}
+        - {x: 34.899994, y: -54.98889}
+        - {x: 48.899994, y: -54.98889}
+        - {x: 49.899994, y: -41.98889}
+        - {x: 49.899994, y: 56.01111}
+        - {x: -44.100006, y: 56.01111}
+        - {x: -48.100006, y: 49.01111}
+        - {x: -48.100006, y: -14.988892}
+        - {x: -29.100006, y: -54.98889}
+        - {x: 33.899994, y: -54.98889}
+        - {x: 36.899994, y: -41.98889}
+        - {x: 22.899994, y: -19.988892}
+    - name: spritesheet necromancer_2
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 34
+        width: 178
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 35.56665, y: -54.98889}
+        - {x: 48.56665, y: -54.98889}
+        - {x: 48.56665, y: 53.01111}
+        - {x: 43.56665, y: 56.01111}
+        - {x: -44.43335, y: 56.01111}
+        - {x: -48.43335, y: 31.011108}
+        - {x: -48.43335, y: 10.011108}
+        - {x: -39.43335, y: 3.0111084}
+        - {x: -20.43335, y: 3.0111084}
+        - {x: -25.43335, y: -53.98889}
+        - {x: -17.43335, y: -54.98889}
+        - {x: 34.56665, y: -54.98889}
+        - {x: 35.56665, y: -41.98889}
+        - {x: 22.56665, y: -19.988892}
+        - {x: 35.56665, y: -28.988892}
+    - name: spritesheet necromancer_3
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 34
+        width: 178
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19.411133, y: -18.988892}
+        - {x: 17.411133, y: -15.988892}
+        - {x: 14.411133, y: -9.988892}
+        - {x: 34.411133, y: -30.988892}
+        - {x: 34.411133, y: -54.98889}
+        - {x: 49.411133, y: -54.98889}
+        - {x: 49.411133, y: 56.01111}
+        - {x: -14.588867, y: 56.01111}
+        - {x: -47.588867, y: 20.011108}
+        - {x: -47.588867, y: -13.988892}
+        - {x: -26.588867, y: -54.98889}
+        - {x: 33.411133, y: -54.98889}
+        - {x: 30.411133, y: -34.98889}
+        - {x: 20.411133, y: -20.988892}
+      - - {x: -47.588867, y: 20.011108}
+        - {x: -29.588867, y: 20.011108}
+        - {x: -29.588867, y: 51.01111}
+        - {x: -30.588867, y: 56.01111}
+        - {x: -43.588867, y: 56.01111}
+        - {x: -47.588867, y: 51.01111}
+    - name: spritesheet necromancer_4
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 34
+        width: 178
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 49.85553, y: -54.98889}
+        - {x: 49.85553, y: 56.01111}
+        - {x: 22.85553, y: 56.01111}
+        - {x: 20.85553, y: 51.01111}
+        - {x: -5.14447, y: 56.01111}
+        - {x: -39.14447, y: 56.01111}
+        - {x: -46.14447, y: 32.01111}
+        - {x: -46.14447, y: 11.011108}
+        - {x: -36.14447, y: 4.0111084}
+        - {x: -13.14447, y: -54.98889}
+        - {x: 37.85553, y: -54.98889}
+        - {x: 28.85553, y: -21.988892}
+        - {x: 34.85553, y: -42.98889}
+        - {x: 37.85553, y: -54.98889}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

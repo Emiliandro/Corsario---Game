@@ -69,11 +69,7 @@ public class EscritorDeNPC : MonoBehaviour
             crenca = "Peklenc, o juiz do submundo";
             item = "Livro";
         }
-        else if (profis == "Comerciante")
-        {
-            crenca = "Dola, a personificacao da sorte";
-            item = "Manuscritos";
-        }
+        
         else if (profis == "Guarda")
         {
             crenca = "Santo Graal, o deus das batalhas";
@@ -100,6 +96,13 @@ public class EscritorDeNPC : MonoBehaviour
             nome = nomesf[n1];
             crenca = "Babayaga, a deusa das bruxas";
             item = "Totem";
+        }
+        else if (profis == "Comerciante")
+        {
+            n1 = Random.Range(0, nomesf.Length);
+            nome = nomesf[n1];
+            crenca = "Dola, a personificacao da sorte";
+            item = "Manuscritos";
         }
         else if (profis == "Ladra")
         {

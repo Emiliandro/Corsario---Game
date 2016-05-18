@@ -11,6 +11,8 @@ public class LeitorDeNPC : MonoBehaviour {
     private string nome, sobrenome, origem, item, profissao, crenca;
     public int qualNPC;
     int background;
+    public Animator animacoes;
+    public string[] listaAnimacoes;
     // Use this for initialization
     void Start () {
         Invoke("readJson", 3f);
@@ -51,6 +53,7 @@ public class LeitorDeNPC : MonoBehaviour {
         crenca = charData["Crenca"].ToString();
 
         Debug.Log(nome + " " + sobrenome + ", de " + origem + ", quer um(a) " + item);
+
         writeBackground();
     }
     void writeBackground() {
@@ -62,6 +65,58 @@ public class LeitorDeNPC : MonoBehaviour {
         else {
             Debug.Log(nome + " " + sobrenome + " vem de uma familia de fazendeiros de " + origem + ", mas com a queda decidiu ser " + profissao + ".");
 
+        }
+        setAnimations();
+
+    }
+    void setAnimations()
+    {
+        if (profissao == "Ferreiro")
+        {
+            animacoes.Play(listaAnimacoes[0], 0, 1f);
+
+        }
+        else if (profissao == "Bardo")
+        {
+            animacoes.Play(listaAnimacoes[1], 0, 1f);
+
+        }
+        else if (profissao == "Coveiro")
+        {
+            animacoes.Play(listaAnimacoes[2], 0, 1f);
+
+        }
+        else if (profissao == "Padre")
+        {
+            animacoes.Play(listaAnimacoes[3], 0, 1f);
+
+        }
+        else if (profissao == "Comerciante")
+        {
+            animacoes.Play(listaAnimacoes[4], 0, 1f);
+
+        }
+        else if (profissao == "Guarda")
+        {
+            animacoes.Play(listaAnimacoes[5], 0, 1f);
+
+        }
+        else if (profissao == "Cacador")
+        {
+            animacoes.Play(listaAnimacoes[6], 0, 1f);
+
+        }
+        else if (profissao == "Curandeira")
+        {
+            animacoes.Play(listaAnimacoes[7], 0, 1f);
+
+        }
+        else if (profissao == "Ladra")
+        {
+            animacoes.Play(listaAnimacoes[8], 0, 1f);
+        }
+        else {
+            animacoes.Play(listaAnimacoes[9], 0, 1f);
         }
     }
 

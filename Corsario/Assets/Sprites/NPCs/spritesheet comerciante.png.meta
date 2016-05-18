@@ -1,0 +1,202 @@
+fileFormatVersion: 2
+guid: 554e2279043f8ca48beeb0b9491d69e4
+timeCreated: 1463611465
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: spritesheet comerciante_0
+    21300002: spritesheet comerciante_1
+    21300004: spritesheet comerciante_2
+    21300006: spritesheet comerciante_3
+    21300008: spritesheet comerciante_4
+    21300010: spritesheet comerciante_5
+    21300012: spritesheet comerciante_6
+    21300014: spritesheet comerciante_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: spritesheet comerciante_0
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 54
+        width: 74
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.1869545, y: 58.67826}
+        - {x: -13.1869545, y: 55.67826}
+        - {x: -21.186954, y: 21.67826}
+        - {x: -21.186954, y: -23.32174}
+        - {x: -17.186954, y: -57.32174}
+        - {x: 21.813046, y: -57.32174}
+        - {x: 21.813046, y: 58.67826}
+    - name: spritesheet comerciante_1
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 54
+        width: 63
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.111588, y: 58.67826}
+        - {x: -18.111588, y: 50.67826}
+        - {x: -18.111588, y: -57.32174}
+        - {x: 18.888412, y: -57.32174}
+        - {x: 18.888412, y: 58.67826}
+    - name: spritesheet comerciante_2
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 54
+        width: 63
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.285492, y: 58.67826}
+        - {x: -18.285492, y: -57.32174}
+        - {x: 18.714508, y: -57.32174}
+        - {x: 18.714508, y: 58.67826}
+    - name: spritesheet comerciante_3
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 54
+        width: 63
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.959412, y: 58.67826}
+        - {x: -17.959412, y: -57.32174}
+        - {x: 18.040588, y: -57.32174}
+        - {x: 18.040588, y: 58.67826}
+    - name: spritesheet comerciante_4
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 54
+        width: 68
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.473877, y: 58.67826}
+        - {x: -19.473877, y: 56.67826}
+        - {x: -19.473877, y: -31.32174}
+        - {x: -18.473877, y: -57.32174}
+        - {x: 15.526123, y: -57.32174}
+        - {x: 19.526123, y: -24.32174}
+        - {x: 19.526123, y: 48.67826}
+        - {x: 17.526123, y: 58.67826}
+    - name: spritesheet comerciante_5
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 54
+        width: 79
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.397095, y: 58.67826}
+        - {x: -22.397095, y: -57.32174}
+        - {x: 21.602905, y: -57.32174}
+        - {x: 23.602905, y: -40.32174}
+        - {x: 23.602905, y: 52.67826}
+        - {x: 22.602905, y: 58.67826}
+    - name: spritesheet comerciante_6
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 54
+        width: 88
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.184021, y: 58.67826}
+        - {x: -21.184021, y: 56.67826}
+        - {x: -25.184021, y: 44.67826}
+        - {x: -25.184021, y: -48.32174}
+        - {x: -18.184021, y: -57.32174}
+        - {x: 25.815979, y: -57.32174}
+        - {x: 25.815979, y: 58.67826}
+    - name: spritesheet comerciante_7
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 54
+        width: 79
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.744934, y: 58.67826}
+        - {x: -22.744934, y: 27.67826}
+        - {x: -22.744934, y: -20.32174}
+        - {x: -16.744934, y: -57.32174}
+        - {x: 21.255066, y: -57.32174}
+        - {x: 23.255066, y: -40.32174}
+        - {x: 23.255066, y: 42.67826}
+        - {x: 16.255066, y: 58.67826}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

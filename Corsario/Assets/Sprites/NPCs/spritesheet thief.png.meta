@@ -1,0 +1,159 @@
+fileFormatVersion: 2
+guid: 12413a169b5ea1b4caaa77202eb4eb1d
+timeCreated: 1463611631
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: spritesheet thief_0
+    21300002: spritesheet thief_1
+    21300004: spritesheet thief_2
+    21300006: spritesheet thief_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: spritesheet thief_0
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 34
+        width: 132
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 48.319275, y: -64.33133}
+        - {x: 48.319275, y: -11.331329}
+        - {x: 12.319275, y: 72.66867}
+        - {x: 6.319275, y: 79.66867}
+        - {x: -25.680725, y: 79.66867}
+        - {x: -40.680725, y: 60.66867}
+        - {x: -44.680725, y: 45.66867}
+        - {x: -46.680725, y: 23.66867}
+        - {x: -46.680725, y: -53.33133}
+        - {x: -38.680725, y: -79.33133}
+        - {x: -23.680725, y: -79.33133}
+        - {x: -21.680725, y: -76.33133}
+        - {x: -12.680725, y: -79.33133}
+        - {x: 44.319275, y: -79.33133}
+    - name: spritesheet thief_1
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 34
+        width: 132
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 36.2229, y: -66.83133}
+        - {x: 48.2229, y: -52.83133}
+        - {x: 48.2229, y: 76.16867}
+        - {x: -46.7771, y: 76.16867}
+        - {x: -46.7771, y: -60.83133}
+        - {x: -36.7771, y: -75.83133}
+        - {x: -24.7771, y: -75.83133}
+        - {x: -21.7771, y: -72.83133}
+        - {x: -12.7771, y: -75.83133}
+        - {x: 23.2229, y: -75.83133}
+    - name: spritesheet thief_2
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 34
+        width: 132
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.126526, y: -69.83133}
+        - {x: 3.1265259, y: -54.83133}
+        - {x: 3.1265259, y: -41.83133}
+        - {x: 8.126526, y: -41.83133}
+        - {x: 7.126526, y: -41.83133}
+        - {x: 4.126526, y: -54.83133}
+        - {x: 21.126526, y: -69.83133}
+        - {x: 34.126526, y: -70.83133}
+        - {x: 48.126526, y: -68.83133}
+        - {x: 48.126526, y: -7.8313293}
+        - {x: 7.126526, y: 76.16867}
+        - {x: -26.873474, y: 76.16867}
+        - {x: -43.873474, y: 54.16867}
+        - {x: -46.873474, y: 19.16867}
+        - {x: -46.873474, y: -47.83133}
+        - {x: -36.873474, y: -75.83133}
+        - {x: -24.873474, y: -75.83133}
+        - {x: -21.873474, y: -72.83133}
+        - {x: -12.873474, y: -75.83133}
+        - {x: 7.126526, y: -75.83133}
+    - name: spritesheet thief_3
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 34
+        width: 132
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 36.03015, y: -66.83133}
+        - {x: 48.03015, y: -52.83133}
+        - {x: 48.03015, y: 76.16867}
+        - {x: -46.96985, y: 76.16867}
+        - {x: -46.96985, y: -60.83133}
+        - {x: -36.96985, y: -75.83133}
+        - {x: -24.969849, y: -75.83133}
+        - {x: -21.969849, y: -72.83133}
+        - {x: -12.969849, y: -75.83133}
+        - {x: 23.030151, y: -75.83133}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
