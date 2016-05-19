@@ -15,6 +15,8 @@ public class BoardManager : MonoBehaviour {
     private Transform boardHolder;
     private List<Vector3> gridPosition = new List<Vector3>(); //Lista de Posicoes para os tiles
 
+    public GameObject sceneLoadImage;
+
     void initialiseList(int _maxX)
     {
         //Limpar as posicoes
@@ -26,8 +28,7 @@ public class BoardManager : MonoBehaviour {
         }
     }
 
-    void FloorGenerate(int index)
-    {
+    void FloorGenerate(int index){
         for (int i = 0; i < gridPosition.Count; i++)
         {
             GameObject toInstantiate;
@@ -68,10 +69,9 @@ public class BoardManager : MonoBehaviour {
         Renderer render = bg.GetComponent<Renderer>();
         initialiseList((int)render.bounds.size.x + 1);
         FloorGenerate(index);
-        EnemyGenerate(index, 1, 5);
+        EnemyGenerate(index, 3, 6);
         floorIndex = index;
-        StartCoroutine(GameManager.instance.startPScene());
-
+        sceneLoadImage.SetActive(false);
     }
 
     public string sceneName() {
@@ -80,7 +80,9 @@ public class BoardManager : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-
+        sceneLoadImage.SetActive(true);
+        //GenerateScene(GameManager.instance.index);
+        GenerateScene(1);
 
     }
 

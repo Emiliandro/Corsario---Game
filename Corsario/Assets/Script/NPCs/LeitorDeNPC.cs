@@ -15,7 +15,7 @@ public class LeitorDeNPC : MonoBehaviour {
     public string[] listaAnimacoes;
     // Use this for initialization
     void Start () {
-        Invoke("readJson", 3f);
+        Invoke("readJson", 6f);
 	}
 
     void readJson() {

@@ -12,10 +12,13 @@ public class EscritorDeNPC : MonoBehaviour
      string nome, sobre, origem, profis, crenca, item;
      int n1, s1, o1, p1, c1;
     public int qualNPC;
+    string profissao1, profissao2;
 
     void Start()
     {
+        qualNPC = 1;
         Profissao();
+
     }
     void writeJson()
     {
@@ -40,6 +43,10 @@ public class EscritorDeNPC : MonoBehaviour
 
         }
 
+        qualNPC++;
+        if (qualNPC == 2) Profissao();
+        else if (qualNPC == 3) Profissao();
+
     }
     void Construtor()
     {
@@ -48,6 +55,18 @@ public class EscritorDeNPC : MonoBehaviour
     }
     void Homem()
     {
+        //
+
+        if (qualNPC == 2)
+        {
+            if (profis != profissao1) {} else Profissao();
+        } else if (qualNPC == 3)
+        {
+            if (profis != profissao1) { } else Profissao();
+            if (profis != profissao2) { } else Profissao();
+        }
+
+
         // CRENCA
         if (profis == "Ferreiro")
         {
@@ -125,8 +144,11 @@ public class EscritorDeNPC : MonoBehaviour
         profis = profiss[p1];
         sobre = sobres[s1];
         origem = origens[o1];
-
-        Homem();    }
+        Debug.Log(profis + profissao1 + profissao2);
+        if (qualNPC == 1) profissao1 = profis;
+        else if (qualNPC == 2) profissao2 = profis;
+        Homem();
+    }
 
 
 }
