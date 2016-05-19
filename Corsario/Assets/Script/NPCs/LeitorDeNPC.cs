@@ -47,6 +47,7 @@ public class LeitorDeNPC : MonoBehaviour {
     void writeStrings() {
         nome = charData["Nome"].ToString();
         profissao = charData["Profissao"].ToString();
+        this.name = profissao;
         sobrenome = charData["Sobrenome"].ToString();
         origem = charData["LugarDeOrigem"].ToString();
         item = charData["Item"].ToString();
