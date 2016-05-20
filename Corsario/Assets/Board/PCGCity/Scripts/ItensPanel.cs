@@ -7,6 +7,18 @@ public class ItensPanel : MonoBehaviour {
     private int limitItem = 0;
     public GameObject refUi;
 
+    void Start()
+    {
+        if (GameManager.instance.itensPlayer.Count != 0)
+        {
+            foreach (Item i in GameManager.instance.itensPlayer)
+            {
+                AddImagem(i.canvasSprite);
+            }
+        }
+        
+    }
+
     public void AddImagem(Sprite _item) {
         if (limitItem < 3) { 
             GameObject itemCanvas = Instantiate(refUi);

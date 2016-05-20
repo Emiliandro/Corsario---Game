@@ -80,9 +80,14 @@ public class BoardManager : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        Camera mainC = Camera.main;
+        mainC.GetComponent<FollowCamera2D>().horizontalMin = floorSettings[floorIndex].minCameraX;
+        mainC.GetComponent<FollowCamera2D>().horizontalMax = floorSettings[floorIndex].maxCameraX;
+        mainC.GetComponent<FollowCamera2D>().verticalMin = floorSettings[floorIndex].minCameraY;
+        mainC.GetComponent<FollowCamera2D>().verticalMax = floorSettings[floorIndex].maxCameraY;
         sceneLoadImage.SetActive(true);
         //GenerateScene(GameManager.instance.index);
-        GenerateScene(1);
+        GenerateScene(floorIndex);
 
     }
 

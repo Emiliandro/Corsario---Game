@@ -7,6 +7,18 @@ public class MissionPanel : MonoBehaviour {
     private int limitMission = 0;
     public GameObject refUi;
 
+    void Start()
+    {
+        if(GameManager.instance.missionsPlayer.Count != 0)
+        {
+            foreach (Mission m in GameManager.instance.missionsPlayer)
+            {
+                AddMission(m);
+            }
+        }
+     
+    }
+
     public void AddMission(Mission _mission){
         if (limitMission < 3)
         {

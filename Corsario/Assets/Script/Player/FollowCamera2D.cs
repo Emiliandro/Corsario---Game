@@ -1,32 +1,72 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class FollowCamera2D : MonoBehaviour {
-	public float interpVelocity, minDistance, followDistance;
-	public GameObject target;
-    public Vector3 offset;
-    Vector3 targetPos;
+public class FollowCamera2D : MonoBehaviour
+{
 
-	// Use this for initialization
-	void Start () {
-        target = GameObject.FindGameObjectWithTag("Player");
-		targetPos = transform.position;
-	}
+    public Transform target;
+    private Vector3 velocity = Vector3.zero;
 
-	// Update is called once per frame
-	void FixedUpdate () {
-        if (target){
-			Vector3 posNoZ = transform.position;
-			posNoZ.z = target.transform.position.z;
-		
-			Vector3 targetDirection = (target.transform.position - posNoZ);
-		
-			interpVelocity = targetDirection.magnitude * 5f;
-		
-			targetPos = transform.position + (targetDirection.normalized * interpVelocity * Time.deltaTime); 
-		
-			transform.position = Vector3.Lerp( transform.position, targetPos + offset, 0.25f);
-		}
-	}
+    public bool isCidade;
+
+    public float smoothTime = 0.15f;
+
+    public bool verticalMaxEnabled = false;
+    public float verticalMax = 0f;
+    public bool verticalMinEnabled = false;
+    public float verticalMin = 0f;
+
+    public bool horizontalMaxEnabled = false;
+    public float horizontalMax = 0f;
+    public bool horizontalMinEnabled = false;
+    public float horizontalMin = 0f;
+
+    void Start() {
+        target = GameObject.Find("Player").transform;
+        if (isCidade)
+        {
+            verticalMax = 5.41f;
+            verticalMin = 4.16f;
+            horizontalMax = 57.44f;
+            horizontalMin = -34.1f;
+        }
+    }
+
+    void Update()
+    {
+        if (target)
+        {
+            Vector3 targetPosition = target.position;
+
+            if (verticalMinEnabled && verticalMaxEnabled)
+            {
+                targetPosition.y = Mathf.Clamp(target.position.y, verticalMin, verticalMax);
+            }
+            else if (verticalMinEnabled)
+            {
+                targetPosition.y = Mathf.Clamp(target.position.y, verticalMin, target.position.y);
+            }
+            else if (verticalMaxEnabled)
+            {
+                targetPosition.y = Mathf.Clamp(target.position.y, target.position.y, verticalMax);
+            }
+
+            if (horizontalMinEnabled && horizontalMaxEnabled)
+            {
+                targetPosition.x = Mathf.Clamp(target.position.x, horizontalMin, horizontalMax);
+            }
+            else if (horizontalMinEnabled)
+            {
+                targetPosition.x = Mathf.Clamp(target.position.x, horizontalMin, target.position.x);
+            }
+            else if (horizontalMaxEnabled)
+            {
+                targetPosition.x = Mathf.Clamp(target.position.x, target.position.x, horizontalMax);
+            }
+
+            targetPosition.z = transform.position.z;
+
+            transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+        }
+    }
 }
-

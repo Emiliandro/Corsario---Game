@@ -11,4 +11,6 @@ public class FloorSettings{
     public Vector3 bgPosition;
     public GameObject enemyPrefab;
 
+    public float minCameraX = 50, maxCameraX = 50, minCameraY = 50, maxCameraY = 50;
+
 }

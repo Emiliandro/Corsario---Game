@@ -8,8 +8,8 @@ public class GameManager : MonoBehaviour{
 
     public int index;
 
-    private List<Mission> missionsPlayer = new List<Mission>();
-    private List<Item> itensPlayer = new List<Item>();
+    public List<Mission> missionsPlayer = new List<Mission>();
+    public List<Item> itensPlayer = new List<Item>();
     private BoardManager boardInstance;
     public BoardManager boardPrefab;
 
@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour{
     }
 
     public void addMission(Mission newMission){
+        mission = GameObject.Find("PanelMission").GetComponent<MissionPanel>();
         if (missionsPlayer.Count < 3){
             missionsPlayer.Add(newMission);
             mission.AddMission(newMission);
@@ -38,6 +39,7 @@ public class GameManager : MonoBehaviour{
     }
 
     public void addItem(Item newItem){
+        panelItem = GameObject.Find("PanelItens").GetComponent<ItensPanel>();
         if (itensPlayer.Count < 3){
             itensPlayer.Add(newItem);
             panelItem.AddImagem(newItem.canvasSprite);
@@ -51,6 +53,10 @@ public class GameManager : MonoBehaviour{
     public void RemoveMission(string missionNpc, bool check) {
         foreach(Mission m in missionsPlayer){
             if(m.agentName == missionNpc && m.missionStatus){
+                foreach(Item i in itensPlayer)
+                {
+                    if (i.nomeItem == m.itemBusca)  itensPlayer.Remove(i);
+                }
                 missionsPlayer.Remove(m);
                 check = true;
             }
