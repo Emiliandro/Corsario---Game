@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Board/PCGCity/Cidade.unity
+- path: Assets/Board/PCGCity/test.unity
   isLoaded: 1
   isActive: 1

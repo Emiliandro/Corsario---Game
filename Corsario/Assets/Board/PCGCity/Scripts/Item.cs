@@ -7,15 +7,9 @@ public class Item : MonoBehaviour {
     public Sprite canvasSprite;
     private GameObject panelItem;
 
-
-	// Use this for initialization
-	void Awake () {
-        this.name = nomeItem;
-        panelItem = GameObject.Find("PanelItens");
-	
-	}
-
     public void pegarItem() {
+        if(panelItem == null)
+            panelItem = GameObject.Find("PanelItens");
         panelItem.GetComponent<ItensPanel>().AddImagem(this.canvasSprite);
         Destroy(this.gameObject);
     }

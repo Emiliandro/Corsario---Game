@@ -1,13 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using Fungus;
 
-public class GameManager : MonoBehaviour {
+public class GameManager : MonoBehaviour{
     public static GameManager instance = null;
 
     public int index;
 
     private List<Mission> missionsPlayer = new List<Mission>();
+    private List<Item> itensPlayer = new List<Item>();
     private BoardManager boardInstance;
     public BoardManager boardPrefab;
 
@@ -21,35 +23,40 @@ public class GameManager : MonoBehaviour {
             instance = this;
         else
             Destroy(gameObject);
+
+        DontDestroyOnLoad(this.gameObject);
     }
 
-    public bool addMission(Mission newMission) {
-        if (missionsPlayer.Count < 3) {
+    public void addMission(Mission newMission){
+        if (missionsPlayer.Count < 3){
             missionsPlayer.Add(newMission);
             mission.AddMission(newMission);
-            return true;
+
+        }else{
+            Debug.Log("Sem espaço para mais missoes");
         }
-        return false;
-        
     }
 
-    public void startGScene(int index) {
-        canvasLoadScene.SetActive(true);
-        Debug.Log("Começou");
-        boardInstance.GenerateScene(index);
+    public void addItem(Item newItem){
+        if (itensPlayer.Count < 3){
+            itensPlayer.Add(newItem);
+            panelItem.AddImagem(newItem.canvasSprite);
+
+        }else{
+            Debug.Log("Sem espaço para mais itens");
+        }
     }
 
-    public IEnumerator startPScene() {
-        yield return new WaitForSeconds(0.5f);
-        canvasLoadScene.SetActive(false);
-        Debug.Log("Carregou a cena: " + boardInstance.sceneName());
+
+    public void RemoveMission(string missionNpc, bool check) {
+        foreach(Mission m in missionsPlayer){
+            if(m.agentName == missionNpc && m.missionStatus){
+                missionsPlayer.Remove(m);
+                check = true;
+            }
+            check = false;
+        }
     }
 
-    // Use this for initialization
-    void Start () {
-        boardInstance = Instantiate(boardPrefab) as BoardManager;
-        startGScene(index);
-	}
- 
 
 }
