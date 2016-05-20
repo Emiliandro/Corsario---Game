@@ -10,6 +10,7 @@ public class Item : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {
+        this.name = nomeItem;
         panelItem = GameObject.Find("PanelItens");
 	
 	}

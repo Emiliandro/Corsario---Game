@@ -9,6 +9,7 @@ public class LeitorDeNPC : MonoBehaviour {
     private string contentChar;
     private JsonData charData;
     private string nome, sobrenome, origem, item, profissao, crenca;
+    public string F_N;
     public int qualNPC;
     int background;
     public Animator animacoes;
@@ -52,6 +53,9 @@ public class LeitorDeNPC : MonoBehaviour {
         origem = charData["LugarDeOrigem"].ToString();
         item = charData["Item"].ToString();
         crenca = charData["Crenca"].ToString();
+
+        F_N = nome + " " + sobrenome + ", de " + origem;
+        Movement2D.instance.Addnome(F_N);
 
         Debug.Log(nome + " " + sobrenome + ", de " + origem + ", quer um(a) " + item);
 

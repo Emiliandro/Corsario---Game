@@ -40,8 +40,9 @@ public class Itens : MonoBehaviour
             switch (ti)
             {
                 case TI.Item:
-                        HUD.instance.SetHud(this.name);
-                        Destroy(this.gameObject);
+                    //HUD.instance.SetHud(this.name);
+                    Movement2D.instance.SetItem(this.name);
+                    Destroy(this.gameObject);
                     break;
                 case TI.NPC:
                     Movement2D.instance.NPCAdd(this.name);
