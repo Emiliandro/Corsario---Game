@@ -86,9 +86,16 @@ public class BoardManager : MonoBehaviour {
         mainC.GetComponent<FollowCamera2D>().verticalMin = floorSettings[floorIndex].minCameraY;
         mainC.GetComponent<FollowCamera2D>().verticalMax = floorSettings[floorIndex].maxCameraY;
         sceneLoadImage.SetActive(true);
-        //GenerateScene(GameManager.instance.index);
-        GenerateScene(floorIndex);
+        GenerateScene(GameManager.instance.index);
 
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Application.LoadLevel("Cidade");
+        }
     }
 
 }

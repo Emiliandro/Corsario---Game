@@ -67,21 +67,6 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
-    <Reference Include="Mono.Cecil">
-      <HintPath>Library\UnityAssemblies\Mono.Cecil.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
     <Reference Include="LitJson">
       <HintPath>Assets\Plugins\LitJson.dll</HintPath>
     </Reference>
@@ -98,6 +83,7 @@
     <Compile Include="Assets\Board\PCGCity\Scripts\MissionPanel.cs" />
     <Compile Include="Assets\Board\PCGCity\Scripts\NPCMission.cs" />
     <Compile Include="Assets\Board\PCGCity\Scripts\Player.cs" />
+    <Compile Include="Assets\Board\PCGCity\Scripts\SaidaTrigger.cs" />
     <Compile Include="Assets\Fungus\Animation\Scripts\Commands\ResetAnimTrigger.cs" />
     <Compile Include="Assets\Fungus\Animation\Scripts\Commands\SetAnimBool.cs" />
     <Compile Include="Assets\Fungus\Animation\Scripts\Commands\SetAnimFloat.cs" />

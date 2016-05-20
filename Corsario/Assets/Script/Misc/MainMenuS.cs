@@ -12,7 +12,7 @@ public class MainMenuS : MonoBehaviour {
 		count = 0;
 	}
 
-	void FixedUpdate () { 
+	void Update () { 
 		if (count == 0)
 		{
 			items[0].transform.localScale = new Vector3(3f, 3f, 3f);

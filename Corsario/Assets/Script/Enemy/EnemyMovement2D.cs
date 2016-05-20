@@ -11,6 +11,7 @@ public class EnemyMovement2D : MonoBehaviour {
     public Animator fdpsSeMovendo;
     public string[] clips;
     private int qualAnim;
+    private bool flip;
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
@@ -36,6 +37,8 @@ public class EnemyMovement2D : MonoBehaviour {
         {
             distanceR = hit.point.x;
         }
+        if (targetPos.x < gameObject.transform.position.x) gameObject.transform.localScale = new Vector2 (-1f, 1f);
+        else gameObject.transform.localScale = new Vector2(1f, 1f);
         if (target)
         {
             Vector3 posNoZ = transform.position;

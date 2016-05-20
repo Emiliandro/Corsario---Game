@@ -20,25 +20,19 @@ public class LeitorDeNPC : MonoBehaviour {
 	}
 
     void readJson() {
-        if (qualNPC == 1)
-        {
+        if (qualNPC == 1){
             contentChar = File.ReadAllText(Application.dataPath + "/primeiro.json");
             charData = JsonMapper.ToObject(contentChar);
 
-        }
-        else if (qualNPC == 2)
-        {
+        }else if (qualNPC == 2){
             contentChar = File.ReadAllText(Application.dataPath + "/segundo.json");
             charData = JsonMapper.ToObject(contentChar);
 
-        }
-        else if (qualNPC == 3)
-        {
+        }else if (qualNPC == 3){
             contentChar = File.ReadAllText(Application.dataPath + "/terceiro.json");
             charData = JsonMapper.ToObject(contentChar);
 
-        }
-        else {
+        }else {
             contentChar = File.ReadAllText(Application.dataPath + "/quarto.json");
             charData = JsonMapper.ToObject(contentChar);
 
@@ -58,7 +52,7 @@ public class LeitorDeNPC : MonoBehaviour {
         Movement2D.instance.Addnome(F_N);
 
         Debug.Log(nome + " " + sobrenome + ", de " + origem + ", quer um(a) " + item);
-
+        GameManager.instance.runnigGame = true;
         writeBackground();
     }
     void writeBackground() {

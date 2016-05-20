@@ -155,7 +155,6 @@ public class Movement2D : MonoBehaviour
             Debug.Log(player_rb.velocity);
         }
         else if (Input.GetKeyUp(attck)) player_rb.velocity = new Vector2(0f, 0f);
-        Debug.Log(count);
 
         if (count == 1)
         {

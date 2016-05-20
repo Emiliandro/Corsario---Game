@@ -6,22 +6,30 @@ using System.IO;
 
 public class EscritorDeNPC : MonoBehaviour
 {
-     NPCs bluePrint;
-     JsonData dataJson;
+
+    NPCs bluePrint;
+    JsonData dataJson;
     public string[] nomes, sobres, origens, profiss, nomesf;
-     string nome, sobre, origem, profis, crenca, item;
-     int n1, s1, o1, p1, c1;
+    string nome, sobre, origem, profis, crenca, item;
+    int n1, s1, o1, p1, c1;
     public int qualNPC;
     string profissao1, profissao2;
 
-    void Start()
+    public void Start()
     {
-        qualNPC = 1;
-        Profissao();
+        if (GameManager.instance.runnigGame){
+            Debug.Log("Mantem os npcs");
+        }else{
+            qualNPC = 1;
+            Profissao();
+            Debug.Log("Criou os Npcs");
+        }
+        
 
     }
     void writeJson()
     {
+
         if (qualNPC == 1)
         {
             dataJson = JsonMapper.ToJson(bluePrint);
@@ -51,6 +59,7 @@ public class EscritorDeNPC : MonoBehaviour
     void Construtor()
     {
         bluePrint = new NPCs(nome, sobre, origem, profis, crenca, item);
+        
         writeJson();
     }
     void Homem()

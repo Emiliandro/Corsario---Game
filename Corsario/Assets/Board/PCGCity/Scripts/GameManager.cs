@@ -1,12 +1,15 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 using Fungus;
+using LitJson;
 
 public class GameManager : MonoBehaviour{
     public static GameManager instance = null;
 
     public int index;
+    public bool runnigGame = false;
 
     public List<Mission> missionsPlayer = new List<Mission>();
     public List<Item> itensPlayer = new List<Item>();
@@ -62,6 +65,12 @@ public class GameManager : MonoBehaviour{
             }
             check = false;
         }
+    }
+
+    public void GoScene(int _index) {
+        index = _index;
+        SceneManager.LoadScene("test");
+
     }
 
 
