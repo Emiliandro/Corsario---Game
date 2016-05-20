@@ -26,7 +26,7 @@ public class Combate2D : MonoBehaviour
     void FixedUpdate()
     {
         
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyUp(KeyCode.Z))
         {
             if (Time.time >= nextTime)
             {

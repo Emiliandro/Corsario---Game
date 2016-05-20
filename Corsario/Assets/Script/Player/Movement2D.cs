@@ -25,7 +25,7 @@ public class Movement2D : MonoBehaviour
     [SerializeField]
     private Rigidbody2D player_rb;
     [SerializeField]
-    private GameObject arrow;
+    private GameObject arrowD, arrowE;
     [SerializeField]
     private Flowchart FC;
     [SerializeField]
@@ -65,75 +65,98 @@ public class Movement2D : MonoBehaviour
 
     void Update()
     {
+
+        Physics2D.IgnoreCollision(arrowE.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+        Physics2D.IgnoreCollision(arrowD.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+
+
         if (Input.GetKeyDown(attck)) attcking = true;
         if (Input.GetKeyUp(attck)) attcking = false;
-        if (Input.GetKey(attck))
-        {
-            attcking = true;
-            if (attcking)
-            {
-                if (!esquerda) animacoes.Play(listaAnimacoes[4], 0, 1f);
-                if (esquerda) animacoes.Play(listaAnimacoes[5], 0, 1f);
-            }
-            if (Input.GetKeyUp(attck)) attcking = false;
-        }
+
         if (Input.GetKey(right) && attcking == false)
         {
-            if (Input.GetKeyDown(right))
-            {
-                animacoes.Play(listaAnimacoes[1], 0, 1f);
-            }
             attcking = false;
             count = 1;
             if (Input.GetKey(up)) count = 7;
             if (Input.GetKey(down)) count = 8;
+            if (Input.GetKeyDown(right))
+            {
+                animacoes.Play(listaAnimacoes[1], 0, 1f);
+            }
+
+
         }
         else if (Input.GetKey(left) && attcking == false)
         {
+            count = 2;
+
+            if (Input.GetKey(up)) count = 5;
+            else if (Input.GetKey(down)) count = 6;
             if (Input.GetKeyDown(left))
             {
                 animacoes.Play(listaAnimacoes[2], 0, 1f);
             }
             attcking = false;
-            count = 2;
-            if (Input.GetKey(up)) count = 5;
-            if (Input.GetKey(down)) count = 6;
+
         }
         else if (Input.GetKey(up) && attcking == false)
         {
+            attcking = false;
+            count = 3;
             if (Input.GetKeyDown(up))
             {
                 if (esquerda == true) animacoes.Play(listaAnimacoes[2], 0, 1f);
                 else animacoes.Play(listaAnimacoes[1], 0, 1f);
             }
-            attcking = false;
-            count = 3;
+
         }
         else if (Input.GetKey(down) && attcking == false)
         {
+            attcking = false;
+            count = 4;
             if (Input.GetKeyDown(down))
             {
                 if (esquerda == true) animacoes.Play(listaAnimacoes[2], 0, 1f);
                 else animacoes.Play(listaAnimacoes[1], 0, 1f);
             }
-            attcking = false;
-            count = 4;
+
+        }
+        else if (Input.GetKey(attck))
+        {
+            count = 9;
+            attcking = true;
+            if (attcking)
+            {
+                if (Input.GetKeyDown(attck))
+                {
+                    if (!esquerda) animacoes.Play(listaAnimacoes[4], 0, 1f);
+                    if (esquerda) animacoes.Play(listaAnimacoes[5], 0, 1f);
+                }
+            }
+            if (Input.GetKeyUp(attck)) attcking = false;
         }
         else
         {
-            if (!Input.GetKeyDown(up))
-            {
-                if (esquerda == true) animacoes.Play(listaAnimacoes[3], 0, 1f);
-                else animacoes.Play(listaAnimacoes[0], 0, 1f);
-            }
-            player_rb.velocity = new Vector2(0f, 0f);
             count = 0; attcking = false;
+            if (esquerda == true) animacoes.Play(listaAnimacoes[3], 0, 1f);
+            else animacoes.Play(listaAnimacoes[0], 0, 1f);
+
         }
+
 
 
     }
     void FixedUpdate()
     {
+
+        if (Input.GetKeyDown(attck))
+        {
+            player_rb.velocity = new Vector2(0.0000000000000001f, 0.0000000000000001f);
+            Debug.Log(player_rb.velocity);
+        }
+        else if (Input.GetKeyUp(attck)) player_rb.velocity = new Vector2(0f, 0f);
+        Debug.Log(count);
+
         if (count == 1)
         {
             player_rb.velocity = new Vector2(velright, 0f);
@@ -178,8 +201,11 @@ public class Movement2D : MonoBehaviour
             esquerda = false;
 
         }
-        else
+        else if (count == 9)
         {
+            player_rb.velocity = new Vector2(0.00000000000000000001f, 0.00000000000000000001f);
+        }
+        else {
             player_rb.velocity = Vector2.zero;
 
         }

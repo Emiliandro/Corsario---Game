@@ -8,6 +8,9 @@ public class EnemyMovement2D : MonoBehaviour {
     Vector3 targetPos;
     private float interpVelocity = 0.5f;
     private bool achouPlayer = false;
+    public Animator fdpsSeMovendo;
+    public string[] clips;
+    private int qualAnim;
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
@@ -19,6 +22,8 @@ public class EnemyMovement2D : MonoBehaviour {
     }
 
     void Start() {
+        qualAnim = Random.Range(0, 2);
+        fdpsSeMovendo.Play(clips[qualAnim], 0, 1f);
         interpVelocity = Random.Range(0.5f, 2f);
     }
     void Update() {
