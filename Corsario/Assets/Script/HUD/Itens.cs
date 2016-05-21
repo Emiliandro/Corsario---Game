@@ -46,7 +46,7 @@ public class Itens : MonoBehaviour
                     break;
                 case TI.NPC:
                     Movement2D.instance.NPCAdd(this.name);
-                    player.SetActive(false);
+                    //player.SetActive(false);
                     break;
 
             }
