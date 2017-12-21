@@ -158,7 +158,20 @@ public class EscritorDeNPC : MonoBehaviour
         else if (qualNPC == 2) profissao2 = profis;
         Homem();
     }
-
+    
+    
+    public enum Personalidade {
+        Honesto, // Fala normalmente
+        Mentiroso, // Fala confusamente
+        Tímido, // Fala pouco
+        Excluído // Evita falar
+    }
+    
+    public enum Afiliacoes {
+        Good, // Quests uteis
+        Neutral, // Quests inuteis
+        Evil, // Quests suicidas
+    }
 
 }
 
