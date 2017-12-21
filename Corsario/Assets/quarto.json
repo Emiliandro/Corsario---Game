@@ -1,1 +1,8 @@
-{"Nome":"Leonor","Sobrenome":"Zoras","LugarDeOrigem":"London","Profissao":"Bardo","Crenca":"Jumala, o deus das festividades","Item":"Violao"}
+{
+  "Nome":"Leonor",
+  "Sobrenome":"Zoras",
+  "LugarDeOrigem":"London",
+  "Profissao":"Bardo",
+  "Crenca": "o deus das festividades",
+  "Item":"Violao"
+}
